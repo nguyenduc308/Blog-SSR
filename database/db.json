@@ -67,6 +67,13 @@
       "name": "phuong",
       "email": "Phuong2@gmail.com",
       "password": "$2b$10$/W1H2qD0SCYYM6pnwEMFQOGe00XxIIFV/1xPKEVhRR2zBWMPTuzXi"
+    },
+    {
+      "id": "9af34b9a-4792-47d2-9234-829ccca34bff",
+      "avatar": "a.jpg",
+      "name": "aaa",
+      "email": "duc.lux47a@gmail.com",
+      "password": "$2b$10$4LH2e7tMsA8HN6OcI9N5LeyMDGmLe33qBfNbUIoEdi9dKZDHtg2.K"
     }
   ]
 }

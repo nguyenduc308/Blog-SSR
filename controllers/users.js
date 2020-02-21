@@ -57,7 +57,7 @@ module.exports.valid = (req, res, next) => {
 }
 module.exports.regUser = async (req, res) => {
     const id = uuidv4();
-    const {name, email, password} = req.body;
+    const {name, email, password, avatar} = req.body;
     const user = db.get('users').find({email:email}).value();
     if(user) return res.render('./users/register', {
         errors: ["Email already exists"],
@@ -65,7 +65,7 @@ module.exports.regUser = async (req, res) => {
     }) 
     const salt = await bcrypt.genSalt(10);
     const hash = await bcrypt.hash(password, salt)
-    db.get('users').push({id, name, email, password: hash}).write()
+    db.get('users').push({id,avatar, name, email, password: hash}).write()
     res.redirect('/users')
 }
 
