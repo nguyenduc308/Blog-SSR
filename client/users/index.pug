@@ -1,0 +1,14 @@
+extends ../layout/header
+block content
+      table.table
+         tr
+            th Name
+            th Email
+            th Detail
+         each item in data
+            tr
+               td=item.name
+               td=item.email
+               td 
+                  a.btn.btn-light(href="/users/" + item.id) view
+      a.btn.btn-light.mt-20(href="?page=2") Next

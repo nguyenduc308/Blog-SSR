@@ -1,0 +1,26 @@
+extends ../layout/header 
+block content
+    .main-content
+      .posts
+        
+        if data
+            each post in data
+              .entry
+                .entry-left
+                  a(href="/posts/"+post.id)
+                    img.entry__img(src="/images/avatar.jpg", alt="")
+                .entry-right
+                  h3.etryn__title
+                    a(href="/posts/"+post.id)=post.title
+                  p.entry__author Post by: 
+                    span=post.user
+                  .entry__content=post.content
+      .sidebar
+          .widget.text-center
+              a.btn.btn-primary(href="/posts/create") Create new post
+          .widget 
+              h4.widget__title Quảng cáo
+              p.widget__content Blog được tạo bằng Nodejs sử dụng Express 
+          .widget 
+              h4.widget__title Liên hệ
+              p.widget__content admin@duclux.com

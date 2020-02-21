@@ -1,0 +1,72 @@
+{
+  "posts": [
+    {
+      "id": "0",
+      "title": "Hôm nay trời đẹp quá",
+      "content": "Hôm nay trời đẹp quá",
+      "date": 1582223469937,
+      "user": "Duc",
+      "useId": "5a5442ed-89a8-463f-91d0-10be3dd80f8d"
+    },
+    {
+      "id": "1",
+      "title": "Like my photo",
+      "content": "Like my photo",
+      "date": 1582223479187,
+      "user": "Duc",
+      "useId": "5a5442ed-89a8-463f-91d0-10be3dd80f8d"
+    },
+    {
+      "id": "5ab79851-cca4-4b1f-8653-16f096da0f25",
+      "title": "Hôm nay tôi rất vui",
+      "content": "Hello các bạn, hôm nay tôi rất vui vì học được rất nhiều điều bổ ích",
+      "date": 1582229038717,
+      "user": "phuong",
+      "useId": "58614fd6-4d4e-4d07-bf4b-15b9c9e8e874"
+    }
+  ],
+  "users": [
+    {
+      "id": "e0995be3-5e23-4747-8939-78bec2b4679e",
+      "name": "Duc",
+      "email": "duc@gmail.com",
+      "password": "$2b$10$tBBYBfA1UOF2B1L8HD.lXetyY6zzdVhSMAJU4WXfZtHfVyum6WqFW"
+    },
+    {
+      "id": "5a5442ed-89a8-463f-91d0-10be3dd80f8d",
+      "name": "Duc",
+      "email": "duc.lux47@gmail.com",
+      "password": "$2b$10$96YFobIqRfmAvG.4So902eYB6nz4emv97FRoBfv3.Kp5vx80o9Y6y"
+    },
+    {
+      "id": "f8730365-ff80-49bc-8611-7353e6a76613",
+      "name": "Phuong",
+      "email": "Phuong@gmail.com",
+      "password": "$2b$10$ZBS6MzChzrHIZvmrM6ByOu/tpvGPT0KQXvLDwNFa..bd2FJFAVZWO"
+    },
+    {
+      "id": "d02aa0f9-4fa8-4f75-b287-c8263e06fe31",
+      "name": "Phuong Phuong",
+      "email": "PhuongPhuong@gmail.com",
+      "password": "$2b$10$hBqIDvP8Dm2moeMmtLPe0u7p1UOpyIfOtbT/Z09cC2rm4DS7gApQe"
+    },
+    {
+      "id": "f8af46ed-c310-45c1-8c6b-4b13e2999ba2",
+      "name": "aaa",
+      "email": "duc.lux47@gmail.coma",
+      "password": "$2b$10$F7.IAXMtkvR/pS7OExQD2OLPmHuOp.3qBtJdy5ps4iqgZn2SZYiea"
+    },
+    {
+      "id": "31d8cf52-c1de-4ea1-8f4c-a746a400f315",
+      "name": "Phuong",
+      "email": "nongdan_moi@yahoo.com",
+      "password": "$2b$10$GEnGZWmndEvFNx26bUaIlupbzLx/kp9FGB1nM1EZN4KKjV/limQgG"
+    },
+    {
+      "id": "58614fd6-4d4e-4d07-bf4b-15b9c9e8e874",
+      "name": "phuong",
+      "email": "Phuong2@gmail.com",
+      "password": "$2b$10$/W1H2qD0SCYYM6pnwEMFQOGe00XxIIFV/1xPKEVhRR2zBWMPTuzXi"
+    }
+  ]
+}

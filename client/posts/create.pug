@@ -1,0 +1,12 @@
+extends ../layout/header 
+block content
+
+    h2 Create new post
+    if errors
+        each error in errors
+            .alert.alert-danger=error
+    form(action="/posts/create" method="POST")
+        .form-group
+            input.form-control(type="text" name="title" placeholder="Post title" value=value?value.title:"")
+            textarea.form-control.mt-10(name="content", cols="30", rows="10" placeholder="Post content" value=value?value.content:"")
+            button.btn.btn-primary(type="submit") Create post

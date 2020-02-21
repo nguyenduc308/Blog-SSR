@@ -1,0 +1,6 @@
+extends ../layout/header
+block content
+    h1 Wellcome to #{user.name} page
+        h3 Name: #{user.name}
+        h3 Email: #{user.email}
+    a.btn.btn-primary.pt5(href="/users") Back

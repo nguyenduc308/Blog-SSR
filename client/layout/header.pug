@@ -1,0 +1,28 @@
+html
+    head
+        //- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
+        link(rel="stylesheet", href="/css/style.css")
+        title=title?"DucLux.Com | " + title : "DucLux.Com"
+        script(src="/js/ui.js")
+    body
+        header.header
+            nav.navbar.grid
+                a.navbar__brand(href='/')
+                    img.navbar__brand-img(src="/logo.jpg", alt="Duc Lux")
+                h1.home-title "Digital Marketing"
+                .navbar__menu
+                    ul.navbar-nav
+                        li.nav-item
+                            a.nav-link(href='/') Home 
+                        li.nav-item.active
+                            a.nav-link(href='/users') Users
+                        li.nav-item
+                            a.nav-link(href='/posts') Posts
+                        li.nav-item
+                            a.nav-link(href='/about') About
+                //- form.form-inline.my-2.my-lg-0(action='/users/search' method='GET')
+                //-     input.form-control.mr-sm-2(type='search' placeholder='Search users' aria-label='Search' name="q" value=q?q:"")
+                //-     button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+        
+        .container.grid
+            block content

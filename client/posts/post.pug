@@ -1,0 +1,10 @@
+extends ../layout/header 
+block content
+    .post
+        if data
+            each post in data
+                h1.post-title=post.title
+                p.post-author Post by : 
+                    span=post.user
+                p.line-break
+                .post-content=post.content
