@@ -10,6 +10,8 @@ module.exports.getPosts =  (req, res)=>{
 module.exports.getPost = (req, res)=>{
     const {id} = req.params;
     const post = db.get('posts').find({id: id}).value();
+    //post.content = JSON.stringify(post.content)
+    console.log(post.content)
     res.render('./posts/post', {
         data: [post],
         title: post.title
@@ -23,15 +25,15 @@ module.exports.getCreatePost = (req, res) => {
 module.exports.createPost = (req, res) => {
     const postId = uuidv4();
     const {id,name} = res.locals.user;
-    const {title, content} = req.body;
+    const {title, editor} = req.body;
     const date = Date.now();
-    if(!title || !content) {
+    if(!title || !editor) {
        return res.render('./posts/create', {
             errors: ["Title and content are required"],
             value: req.body
         })
 
     }
-    db.get('posts').push({id:postId,title: title, content:content, date: date,user:name, useId:id}).write()
+    db.get('posts').push({id:postId,title: title, content:editor, date: date,user:name, useId:id}).write()
     res.redirect('/posts')
 }

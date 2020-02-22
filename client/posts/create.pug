@@ -8,5 +8,7 @@ block content
     form(action="/posts/create" method="POST")
         .form-group
             input.form-control(type="text" name="title" placeholder="Post title" value=value?value.title:"")
-            textarea.form-control.mt-10(name="content", cols="30", rows="10" placeholder="Post content" value=value?value.content:"")
+            textarea#editor.form-control.mt-10.ckeditor(name="editor", cols="30", rows="10" placeholder="Post content" value=value?value.content:"")
             button.btn.btn-primary(type="submit") Create post
+
+    script(src="/js/ui.js")
